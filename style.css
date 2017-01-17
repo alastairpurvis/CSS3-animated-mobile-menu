@@ -1,0 +1,136 @@
+/* Page wrapper */
+
+#site-wrapper {
+    width: 100%;
+    padding: 0 !important;
+    margin: 0 !important;
+    position: relative;
+    overflow: hidden;
+}
+#site-canvas {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transition: .3s;
+    transition: .3s;
+    padding: 0 !important;
+    margin: 0 !important;
+    -webkit-transform: translateZ(0) translateX(0);
+    transform: translateZ(0) translateX(0);
+    -webkit-backface-visibility: hidden;
+    padding: 5% 0;
+    /* Temp: Just spacing. */
+}
+/* Initial menu */
+
+.nav-toggle {
+    transition: transform 0.3s;
+    transition-delay: 0s;
+}
+.flip-hamburger {
+    transform: rotate(90deg);
+}
+.iphonemenu {
+    background: rgba(18, 18, 18, 1);
+    left: -305px;
+    height: 100%;
+    z-index: 1;
+    outline: 1px solid transparent;
+    margin: 0;
+    margin-left: 5px;
+    padding: 0;
+    display: inline !important;
+    visibility: visible !important;
+    position: absolute;
+    width: 300px;
+    z-index: 99000;
+    text-align: Center;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0)
+}
+#site-wrapper.show-nav #site-canvas {
+    -webkit-transform: translate3d(285px, 0, 0);
+    transform: translate3d(translateX(285px));
+}
+#site-menu {
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -300px;
+    background: #428bca;
+    padding: 15px;
+}
+/* Basic styling */
+
+.iphonemenu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.iphonemenu li {
+    line-height: 46px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+}
+.iphonemenu .menuitem-shop {
+    border: 1px solid white;
+    padding: 12px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 3px;
+    margin-top: 10px;
+    -webkit-transition: all 0.4s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -moz-transition: all 0.4s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -o-transition: all 0.4s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -ms-transition: all 0.4s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    transition: all 0.4s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+}
+.menuitem-shop:hover,
+.menuitem-shop a:hover {
+    border: 1px solid white;
+    background-color: #fff;
+    color: #000;
+    opacity: 1 !Important;
+}
+.iphonemenu a {
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.iphonemenu a:hover {
+    -webkit-transition: all 0.3s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -moz-transition: all 0.3s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -o-transition: all 0.3s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -ms-transition: all 0.3s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    transition: all 0.3s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    opacity: 0.7;
+}
+.mycartlink a:hover {
+    -webkit-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -moz-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -o-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -ms-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    opacity: 0.8;
+}
+.icon-close {
+    cursor: pointer;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.icon-menu {
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding-bottom: 28px;
+    padding-top: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.icon-menu i {
+    margin-right: 5px;
+}
